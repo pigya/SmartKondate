@@ -1,0 +1,12 @@
+# 一般的なNode.js / Reactプロジェクト + Flask用
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# その他
+*.log

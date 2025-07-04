@@ -1,6 +1,12 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from rakutenRecipeFetcher import RakutenRecipeFetcher  # 作成済みクラスをインポート
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # .envを読み込む
+
+APP_ID = os.environ.get("APP_ID")
 
 app = Flask(__name__)
 CORS(app)
